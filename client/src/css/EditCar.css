@@ -1,0 +1,38 @@
+/* EditCar.css */
+input[type="text"] {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.image-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-selector label {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.image-selector img {
+    border: 2px solid transparent;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: border-color 0.3s;
+}
+
+.image-selector input[type="radio"]:checked + img {
+    border-color: #007bff;
+    border-width: 4px; /* Thicker border */
+}
+
+/* EditCar.css */
+input[type="radio"] {
+    display: none;
+}

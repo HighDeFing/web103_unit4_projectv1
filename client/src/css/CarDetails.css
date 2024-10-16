@@ -1,0 +1,33 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1600px;
+}
+
+img {
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.1); /* Set the desired background opacity */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.card:hover {
+    background-color: rgba(128, 128, 128, 0.5); /* Full opacity on hover */
+}
+
+.card header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-container {
+    margin-left: auto;
+}
+
